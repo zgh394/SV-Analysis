@@ -1,7 +1,7 @@
 #!/bin/bash
 ref="Gallus_gallus.GRCg6a.dna.toplevel.fa"
-bam_dir="./bam/"
-result_dir="./result/"
+bam_dir="./bam"
+result_dir="./result"
 
 mkdir -p bcf vcf geno
 ##dell call sv
