@@ -31,3 +31,5 @@ bcftools view $result_dir/germline.bcf -Oz -o $result_dir/germline.vcf.gz
 
 #6. filtering SVTYPE
 bcftools view -i '(SVTYPE = "DEL" | SVTYPE = "DUP" | SVTYPE = "INV" | SVTYPE = "INS")' germline.vcf.gz -Oz -o germline.filter.vcf.gz && tabix germline.filter.vcf.gz
+
+echo "All Delly SV calling & filtering done!"
